@@ -1,0 +1,24 @@
+<br><br>
+<b>Shops detail</b><br><br>
+<table>
+	<table border="3.5">
+  <tr>
+    <th>shop_name</th>
+    <th>shop_add</th>
+    <th>shop_detail</th>
+    <th>shop_location</th>
+    <th colspan="6"></th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.shop_name %></td>
+      <td><%= user.shop_add %></td>
+      <td><%= user.shop_detail %></td>
+      <td><%= link_to 'Display Registered Shops',  user_path(user) %><td>
+    </tr>
+  <% end %>
+</table>
+
+
+
+

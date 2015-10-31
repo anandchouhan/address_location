@@ -1,0 +1,4 @@
+<%= link_to "Back", users_path,  :class => 'btn btn-large btn-info' %>
+<br><br>
+<%= @user.shop_add %><br><br>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@user.latitude}%2C#{@user.longitude}" %>
